@@ -1,16 +1,15 @@
- let initialArr =["Shubham","Pranav","Radhika","Mahesh","Arvika"];
+// ---------------------------------Serch Array---------------------------------------------
 
- let initValue = "Pranavs";
+let initialArry = ['Shubham', 'Pratham', 'Mahesh', 'Pranav', 'Kartik']
 
- function SearchArr (Arr , initArr){
-    if(initArr.includes(Arr)){                 // includes() is search Value which we pass
-           console.log(`${Arr} Name Is Found !`);
-    }else{
-           console.log(`${Arr} Name Is not Found !`);
+let searchArr = 'Pranav'
+
+function findArr(Arr, name) {
+
+    if (Arr.includes(name)) {
+        console.log(`${name} was found in array.`);
+    } else {
+        console.log(`${name}was not found in array.`)
     }
- }
-
- SearchArr(initValue,initialArr)  // passing parameter :- Arr     = initValue in prameter
-                                                       // initArr = initialArr in prameter
-
-     // OUTPUT:- Pranavs Name Is Found !
+}
+findArr(initialArry, searchArr);
